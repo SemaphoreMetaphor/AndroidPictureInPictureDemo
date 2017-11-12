@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         if (isInPictureInPictureMode) {
             setContentView(R.layout.activity_pip)
-            actionBar?.hide()
             supportActionBar?.hide()
         } else {
             setContentView(R.layout.activity_main)
